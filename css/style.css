@@ -328,7 +328,7 @@ nav li:nth-child(4) a::before{
     /********hobbies********/
     .hobbies_item{
         flex-direction: row;
-        height: 50vh;
+        height: 300px;
         gap: 20px;
     }
     .hobbies_item h3{
@@ -338,10 +338,10 @@ nav li:nth-child(4) a::before{
         margin-top: 5vh;
     }
     .hobbies_item img{
-        width: 20%;
+        width: 30%;
     }
     .hobbies_item:hover img{
-        width: 40%;
+        width: 50%;
         transition: width 0.5s ease;
     }
     /*******friends*********/
@@ -387,8 +387,9 @@ nav li:nth-child(4) a::before{
         display: grid;
         gap: 50px;
         grid-template-columns: 1fr 25fr;
-        grid-template-rows: auto;
-        grid-template-areas: "nav main";
+        grid-template-rows: auto auto;
+        grid-template-areas: "nav main"
+                             "footer footer";
     }
     /*******NAV******/
     nav{
@@ -466,9 +467,7 @@ nav li:nth-child(4) a::before{
         width: 90%;
     }
     #kontakt {
-        margin-left: 0;
-        grid-column: 2;
-        width: 90%;
+        grid-area: footer;
     }
 
 }
